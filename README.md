@@ -1,6 +1,6 @@
 # Byteland
 <p align="center">
-    <img src=" cooltext444523265970856.png " width="500px" />
+    <img src=" [cooltext444523265970856.png](https://raw.githubusercontent.com/Dnursaurio/Byteland/main/imagenes%20readme/cooltext444523265970856.png) " width="500px" />
 </p>
 
 <p align="center">
