@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-    <img src="images/banner.png" />
+    <img src="cooltext444523265970856.png" />
 </p>
 
 <br>
