@@ -5,11 +5,7 @@
 
 <p align="center">
     <img src="https://static.wikia.nocookie.net/infamous/images/c/c3/Neon_District.png/revision/latest?cb=20191129034928">
-
-</p>
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/Dnursaurio/Byteland/main/imagenes%20readme/cooltext444523265970856.png" />
+    
 </p>
 
 <br>
