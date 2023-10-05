@@ -1,4 +1,3 @@
-# Byteland
 <p align="center">
     <img src="https://raw.githubusercontent.com/Dnursaurio/Byteland/main/imagenes%20readme/cooltext444523265970856.png" width="500px" />
 </p>
