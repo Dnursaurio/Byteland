@@ -28,28 +28,27 @@ Lenguaje:
   </tr>
   <tr>
     <td>hotfix</td>
-    <td>for quickly fixing critical issues,
-usually with a temporary solution</td>
+    <td>for para solucionar rápidamente problemas críticos, generalmente con una solución temporal</td>
     <td>hotfix/*</td>
   </tr>
   <tr>
     <td>bugfix</td>
-    <td>for fixing a bug</td>
+    <td>for arreglando un error</td>
     <td>bugfix/*</td>
   </tr>
   <tr>
     <td>feature</td>
-    <td>feature	for adding, removing or modifying a feature</td>
+    <td>feature	para agregar, eliminar o modificar una característica</td>
     <td>feature/*</td>
   </tr>
   <tr>
     <td>test</td>
-    <td>for experimenting something which is not an issue</td>
+    <td>for experimentar algo que no es un problema</td>
     <td>test/*</td>
   </tr>
   <tr>
     <td>wip</td>
-    <td>for a work in progress</td>
+    <td>for un trabajo en progreso</td>
     <td>wip/*</td>
   </tr>
 </table>
