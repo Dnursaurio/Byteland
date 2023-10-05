@@ -10,8 +10,7 @@
 <br>
 
 # About Byteland
-Es un juego de plataformas al estilo Super Mario Bros donde la protagonista tendrá que ir de un punto “A” a otro “B” atravesando trampas y venciendo enemigos para poder llegar a su destino, planteamos mecánicas de combate con el estilo de juegos MetroidVania donde el enemigo no muere al ser aplastado, sino solo cuando se le dispare algún proyectil. 
-Lenguaje:
+Es un juego de plataformas al estilo Super Mario Bros donde la protagonista tendrá que ir de un punto “A” a otro “B” atravesando trampas y venciendo enemigos para poder llegar a su destino, planteamos mecánicas de combate con el estilo de juegos MetroidVania donde el enemigo no muere al ser aplastado, sino solo cuando se le dispare algún proyectil.
 
 
 
