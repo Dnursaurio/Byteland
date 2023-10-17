@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Byteland-main\proyecto\byteland\x64\Debug\byteland.exe</FullPath>
+      <FullPath>D:\byteland\Byteland\proyecto\byteland\x64\Debug\byteland.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

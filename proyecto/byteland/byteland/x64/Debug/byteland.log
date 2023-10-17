@@ -1,2 +1,3 @@
 ﻿  main.cpp
-  byteland.vcxproj -> D:\Byteland-main\proyecto\byteland\x64\Debug\byteland.exe
+main.obj : error LNK2019: símbolo externo "public: __cdecl Player::Player(float,float)" (??0Player@@QEAA@MM@Z) sin resolver al que se hace referencia en la función main
+D:\byteland\Byteland\proyecto\byteland\x64\Debug\byteland.exe : fatal error LNK1120: 1 externos sin resolver

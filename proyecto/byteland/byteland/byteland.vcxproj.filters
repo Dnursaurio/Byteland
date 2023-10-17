@@ -13,10 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de encabezado\clases">
+      <UniqueIdentifier>{95d07706-c2c5-4b98-a0aa-1726429dab8e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global.hpp">
+      <Filter>Archivos de encabezado\clases</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Archivos de encabezado\clases</Filter>
+    </ClInclude>
+    <ClInclude Include="Convertir_escena.hpp">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
