@@ -131,11 +131,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="colision_del_mapa.hpp" />
     <ClInclude Include="Convertir_escena.hpp" />
+    <ClInclude Include="Enemigo.hpp" />
     <ClInclude Include="Global.hpp" />
+    <ClInclude Include="Grados_a_Radianes.hpp" />
     <ClInclude Include="Player.hpp" />
+    <ClInclude Include="Radianes_a_Gradis.hpp" />
+    <ClInclude Include="Tomar_Grados.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,19 +8,16 @@ using namespace std;
 using namespace sf;
 int main()
 {
-	//escondemos el HUD
 	bool dibujar_mapa = 1;
 
 	array<array<Cell, ALTURA_MAPA>, ANCHO_MAPA> mapa{};
 	
-	//independizamos la tasa de fotogramas del juego
 	chrono::microseconds lag(0);
 
 	chrono::steady_clock::time_point tiempo_previo;
 	
 	Event evento;
 
-	//la ventana del proyecyo Byteland
 	RenderWindow ventana(VideoMode(REESCALADO_DE_PANTALLA * ANCHO_PANTALLA, REESCALADO_DE_PANTALLA * ALTURA_PANTALLA),"Byteland Project", Style::Close);
 	ventana.setMouseCursorVisible(0);
 	ventana.setView(View(FloatRect(0,0, ANCHO_PANTALLA,ALTURA_PANTALLA)));
@@ -31,6 +28,9 @@ int main()
 	casilla_de_la_grilla_del_mapa_textura.loadFromFile("sprites/Grilla.png");
 	
 	Player jugador(0, 0);
+
+	/*Enemigo enemy(0,0);
+	map = convertri_escena(jugador, enemy);*/
 
 	casilla_de_la_grilla_del_mapa_sprite.setTexture(casilla_de_la_grilla_del_mapa_textura);
 	casilla_de_la_grilla_del_mapa_sprite.setTextureRect(IntRect(0,0,TAMANO_CASILLA_DE_GRILLA_EN_MAPA,TAMANO_CASILLA_DE_GRILLA_EN_MAPA));
@@ -68,11 +68,45 @@ int main()
 					}
 				}
 			}
-		}
-		//jugador.update(ventana);
+			//jugador.update(map, ventana);
+			//enemy.update(map, ventana);
 
-		ventana.clear();
-		ventana.display();
+			if (DURACION_FOTOGRAMA > lag)
+			{
+				ventana.clear(Color(73, 255, 255));
+
+				//jugador.draw_screen(ventana, enemy);
+
+				if (1 == dibujar_mapa)
+				{
+					for (unsigned short a = 0; a < ceil(TAMANO_CASILLA_EN_MAPA * ANCHO_MAPA / static_cast<float>(TAMANO_CASILLA_DE_GRILLA_EN_MAPA)); a++)
+					{
+						for (unsigned short b = 0; b < ceil(TAMANO_CASILLA_EN_MAPA * ALTURA_MAPA / static_cast<float>(TAMANO_CASILLA_DE_GRILLA_EN_MAPA)); b++)
+						{
+							casilla_de_la_grilla_del_mapa_sprite.setPosition(static_cast<float>(TAMANO_CASILLA_EN_MAPA * a), static_cast<float>(TAMANO_CASILLA_EN_MAPA * b));
+
+							ventana.draw(casilla_de_la_grilla_del_mapa_sprite);
+						}
+					}
+
+					/*for (unsigned short a = 0; a < ANCHO_MAPA; a++)
+					{
+						for (unsigned short b = 0; b < ALTURA_MAPA; b++)
+						{
+							if (Cell::Wall ==  map[a][b])
+							{
+								pared_del_mapa_sprite.setPosition();
+
+								ventana.draw(pared_del_mapa_sprite);
+							}
+						}
+					}*/
+					jugador.draw_map(ventana);
+
+					//enemy.draw_map(ventana);
+				}
+				ventana.display();
+			}
+		}
 	}
-	return 0;
 }

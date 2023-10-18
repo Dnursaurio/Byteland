@@ -4,4 +4,4 @@
 #include "Player.hpp"
 using namespace std;
 
-array<array<Cell, ALTURA_MAPA>, ANCHO_MAPA> convetir_ecsena(Player &i_player);
+array<array<Cell, ALTURA_MAPA>, ANCHO_MAPA> convetir_escena(Player &i_player);

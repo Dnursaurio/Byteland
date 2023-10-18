@@ -21,6 +21,9 @@
     <ClCompile Include="main.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Global.hpp">
@@ -30,7 +33,22 @@
       <Filter>Archivos de encabezado\clases</Filter>
     </ClInclude>
     <ClInclude Include="Convertir_escena.hpp">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\clases</Filter>
+    </ClInclude>
+    <ClInclude Include="Grados_a_Radianes.hpp">
+      <Filter>Archivos de encabezado\clases</Filter>
+    </ClInclude>
+    <ClInclude Include="Tomar_Grados.hpp">
+      <Filter>Archivos de encabezado\clases</Filter>
+    </ClInclude>
+    <ClInclude Include="colision_del_mapa.hpp">
+      <Filter>Archivos de encabezado\clases</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemigo.hpp">
+      <Filter>Archivos de encabezado\clases</Filter>
+    </ClInclude>
+    <ClInclude Include="Radianes_a_Gradis.hpp">
+      <Filter>Archivos de encabezado\clases</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,3 +1,6 @@
 ﻿  main.cpp
+  Player.cpp
+  Generando código...
 main.obj : error LNK2019: símbolo externo "public: __cdecl Player::Player(float,float)" (??0Player@@QEAA@MM@Z) sin resolver al que se hace referencia en la función main
-D:\byteland\Byteland\proyecto\byteland\x64\Debug\byteland.exe : fatal error LNK1120: 1 externos sin resolver
+main.obj : error LNK2019: símbolo externo "public: void __cdecl Player::draw_map(class sf::RenderWindow &)" (?draw_map@Player@@QEAAXAEAVRenderWindow@sf@@@Z) sin resolver al que se hace referencia en la función main
+D:\byteland\Byteland\proyecto\byteland\x64\Debug\byteland.exe : fatal error LNK1120: 2 externos sin resolver
