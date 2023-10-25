@@ -9,3 +9,10 @@
 #include "Radianes_a_Gradis.hpp"
 #include "Enemigo.hpp"
 #include "Player.hpp"
+
+Player::Player(float i_x, float i_y):
+	movhorizontal(0),
+	movvertical(0),
+	x(i_x),
+	y(i_y),
+	map_player_sprite(map_player_texture),
