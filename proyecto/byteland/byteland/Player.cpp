@@ -59,7 +59,7 @@ void Player::draw_map(RenderWindow& i_ventana)
 }
 
 
-void Player::draw_screen(RenderWindow& i_ventana, const Enemigo &i_enemigo)
+void Player::bibujar_ventana(RenderWindow& i_ventana, const Enemigo& i_enemigo)
 {
 	bool draw_enemigo = 0;
 
@@ -420,7 +420,7 @@ void Player::update(const array<array<Cell, ALTURA_MAPA>, ANCHO_MAPA>& i_map, co
 				else if (1 == colision_esquina)
 				{
 					//el rayo no puede pasar a traves de dos paredes que permanecen diagonales
-					if (Cell::Wall == i_map[casilla_actual_x - paso_x_por_casilla][casilla_actual_y] && Cell::Wall == i_map[casilla_actual_x][casilla_actual_y - paso_y_por_casilla]);
+					if (Cell::Wall == i_map[casilla_actual_x - paso_x_por_casilla][casilla_actual_y] && Cell::Wall == i_map[casilla_actual_x][casilla_actual_y - paso_y_por_casilla])
 					{
 						break;
 					}

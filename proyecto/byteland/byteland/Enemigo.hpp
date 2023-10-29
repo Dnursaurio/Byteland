@@ -20,7 +20,7 @@ public:
 	float get_centro_de_y() const;
 	float Get_direccion() const;
 
-	void dibujar_mapa(RenderWindow &i_window);
+	void dibujar_mapa(RenderWindow& i_window);
 	void set_position(float i_x, float i_y);
-	void update(const array<array<Cell, ALTURA_MAPA>,ANCHO_MAPA>&i_map, const RenderWindow &i_window);
+	void update(const array<array<Cell, ALTURA_MAPA>,ANCHO_MAPA>& i_map, const RenderWindow& i_ventana);
 };

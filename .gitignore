@@ -3,7 +3,5 @@
 *.vscode/settings.json
 *.vscode/tasks.json
 *.vs
-*.exe
 *.vscode
-*.o
 *.idea

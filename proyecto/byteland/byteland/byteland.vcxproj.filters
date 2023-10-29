@@ -21,49 +21,49 @@
     <ClCompile Include="main.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
-    <ClCompile Include="tomar_grados.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Radianes_a_grados.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="grados_a_radianes.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="convertir_escena.cpp">
+      <Filter>Archivos de recursos</Filter>
     </ClCompile>
     <ClCompile Include="Enemigo.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de recursos</Filter>
     </ClCompile>
-    <ClCompile Include="convertir_escena.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="grados_a_radianes.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="Radianes_a_grados.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="tomar_grados.cpp">
+      <Filter>Archivos de recursos</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Global.hpp">
-      <Filter>Archivos de encabezado\clases</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.hpp">
-      <Filter>Archivos de encabezado\clases</Filter>
-    </ClInclude>
-    <ClInclude Include="Convertir_escena.hpp">
-      <Filter>Archivos de encabezado\clases</Filter>
-    </ClInclude>
-    <ClInclude Include="Grados_a_Radianes.hpp">
-      <Filter>Archivos de encabezado\clases</Filter>
-    </ClInclude>
     <ClInclude Include="Tomar_Grados.hpp">
-      <Filter>Archivos de encabezado\clases</Filter>
+      <Filter>Archivos de origen</Filter>
     </ClInclude>
     <ClInclude Include="colision_del_mapa.hpp">
-      <Filter>Archivos de encabezado\clases</Filter>
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="Convertir_escena.hpp">
+      <Filter>Archivos de origen</Filter>
     </ClInclude>
     <ClInclude Include="Enemigo.hpp">
-      <Filter>Archivos de encabezado\clases</Filter>
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.hpp">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="Grados_a_Radianes.hpp">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Archivos de origen</Filter>
     </ClInclude>
     <ClInclude Include="Radianes_a_Gradis.hpp">
-      <Filter>Archivos de encabezado\clases</Filter>
+      <Filter>Archivos de origen</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

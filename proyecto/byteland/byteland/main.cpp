@@ -79,7 +79,7 @@ int main()
 			{
 				ventana.clear(Color(73, 255, 255));
 
-				jugador.draw_screen(ventana, enemy);
+				jugador.bibujar_ventana(ventana, enemy);
 
 				if (1 == dibujar_mapa)
 				{
