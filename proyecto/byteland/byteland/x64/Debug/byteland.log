@@ -1,10 +1,167 @@
-﻿  main.cpp
-D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(28,58): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(28,58): error C2143: error de sintaxis: falta ',' delante de '&'
+﻿  convertir_escena.cpp
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,58): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,58): error C2143: error de sintaxis: falta ',' delante de '&'
+  Enemigo.cpp
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,58): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,58): error C2143: error de sintaxis: falta ',' delante de '&'
+  main.cpp
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,58): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,58): error C2143: error de sintaxis: falta ',' delante de '&'
+D:\byteland\Byteland\proyecto\byteland\byteland\main.cpp(82,12): error C2664: 'void Player::draw_screen(sf::RenderWindow &,const int)': el argumento 2 no puede convertirse de 'Enemigo' a 'const int'
+D:\byteland\Byteland\proyecto\byteland\byteland\main.cpp(82,34): message : No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,7): message : vea la declaración de 'Player::draw_screen'
+D:\byteland\Byteland\proyecto\byteland\byteland\main.cpp(82,12): message : al hacer coincidir la lista de argumentos '(sf::RenderWindow, Enemigo)'
   Player.cpp
-D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(28,58): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(28,58): error C2143: error de sintaxis: falta ',' delante de '&'
-D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(60,14): error C2511: 'void Player::draw_screen(sf::RenderWindow &,const Enemigo &)': la función miembro sobrecargada no se ha encontrado en 'Player'
-D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(7,7): message : vea la declaración de 'Player'
-  tomar_grados.cpp
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,58): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(29,58): error C2143: error de sintaxis: falta ',' delante de '&'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(62,14): error C2511: 'void Player::draw_screen(sf::RenderWindow &,const Enemigo &)': la función miembro sobrecargada no se ha encontrado en 'Player'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(8,7): message : vea la declaración de 'Player'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(69,84): error C2597: referencia no válida a miembro no static 'Player::movvertical'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(11,8): message : vea la declaración de 'Player::movvertical'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(70,23): error C2597: referencia no válida a miembro no static 'Player::x'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(70,23): message : vea la declaración de 'Player::x'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(70,23): error C3867: 'Player::x': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(70,23): error C2568: '+': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(71,23): error C2597: referencia no válida a miembro no static 'Player::y'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(71,23): message : vea la declaración de 'Player::y'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(71,23): error C3867: 'Player::y': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(71,23): error C2568: '+': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(75,157): error C2597: referencia no válida a miembro no static 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(75,157): message : vea la declaración de 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(75,157): error C3867: 'Player::movhorizontal': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(75,157): error C2568: '-': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(103,54): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(103,54): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(103,54): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(103,54): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(122,94): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(130,48): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(130,48): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(130,48): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(130,48): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(130,97): error C2597: referencia no válida a miembro no static 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(130,97): message : vea la declaración de 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(130,97): error C3867: 'Player::movhorizontal': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(130,97): error C2568: '+': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(131,48): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(131,48): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(131,48): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(131,48): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(131,97): error C2597: referencia no válida a miembro no static 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(131,97): message : vea la declaración de 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(131,97): error C3867: 'Player::movhorizontal': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(131,97): error C2568: '+': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,85): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,85): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,85): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,85): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,67): error C2664: '_Ty std::max<float>(std::initializer_list<float>)': el argumento 1 no puede convertirse de 'int' a 'std::initializer_list<float>'
+          with
+          [
+              _Ty=float
+          ]
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,78): message : 'std::initializer_list<float>::initializer_list':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\initializer_list(52,1): message : puede ser 'std::initializer_list<float>::initializer_list(std::initializer_list<float> &&)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,78): message : 'std::initializer_list<float>::initializer_list(std::initializer_list<float> &&)': el argumento 1 no puede convertirse de 'int' a 'std::initializer_list<float> &&'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,78): message : Razón: no se puede realizar la conversión de 'int' a 'std::initializer_list<float>'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,78): message : La conversión requiere un segundo operador de conversión definido por el usuario o constructor
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\initializer_list(52,1): message : o       'std::initializer_list<float>::initializer_list(const std::initializer_list<float> &)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,78): message : 'std::initializer_list<float>::initializer_list(const std::initializer_list<float> &)': el argumento 1 no puede convertirse de 'int' a 'const std::initializer_list<float> &'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,78): message : Razón: no se puede realizar la conversión de 'int' a 'const std::initializer_list<float>'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,78): message : La conversión requiere un segundo operador de conversión definido por el usuario o constructor
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,78): message : al hacer coincidir la lista de argumentos '(int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(6776,26): message : vea la declaración de 'std::max'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(52,26): message : puede ser '_Ty std::max(std::initializer_list<_Elem>,_Pr)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,67): message : "_Ty std::max(std::initializer_list<_Elem>,_Pr)": espera 2 argumentos - 1 proporcionado
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(45,6): message : o       'const _Ty &std::max(const _Ty &,const _Ty &) noexcept(<expr>)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,67): message : "const _Ty &std::max(const _Ty &,const _Ty &) noexcept(<expr>)": espera 2 argumentos - 1 proporcionado
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(35,33): message : o       'const _Ty &std::max(const _Ty &,const _Ty &,_Pr) noexcept(<expr>)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,67): message : "const _Ty &std::max(const _Ty &,const _Ty &,_Pr) noexcept(<expr>)": espera 3 argumentos - 1 proporcionado
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(139,67): message : al hacer coincidir la lista de argumentos '(int)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(142,116): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(142,116): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(142,116): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(142,116): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(145,38): warning C4244: 'argumento': conversión de 'const _Ty' a 'T'; posible pérdida de datos
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(147,44): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(165,20): error C2597: referencia no válida a miembro no static 'Player::wall_sprite'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(19,9): message : vea la declaración de 'Player::wall_sprite'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(175,105): error C2597: referencia no válida a miembro no static 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(175,105): message : vea la declaración de 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(175,105): error C3867: 'Player::movhorizontal': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(175,105): error C2568: '-': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(189,18): error C2597: referencia no válida a miembro no static 'Player::enemigo_sprite'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(18,9): message : vea la declaración de 'Player::enemigo_sprite'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(194,28): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(194,28): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(194,28): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(194,28): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(213,49): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(213,49): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(213,49): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(213,49): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(213,98): error C2597: referencia no válida a miembro no static 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(213,98): message : vea la declaración de 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(213,98): error C3867: 'Player::movhorizontal': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(213,98): error C2568: '+': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(214,49): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(214,49): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(214,49): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(214,49): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(214,98): error C2597: referencia no válida a miembro no static 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(214,98): message : vea la declaración de 'Player::movhorizontal'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(214,98): error C3867: 'Player::movhorizontal': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(214,98): error C2568: '+': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,86): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,86): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,86): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,86): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,68): error C2664: '_Ty std::max<float>(std::initializer_list<float>)': el argumento 1 no puede convertirse de 'int' a 'std::initializer_list<float>'
+          with
+          [
+              _Ty=float
+          ]
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,79): message : 'std::initializer_list<float>::initializer_list':ninguna función sobrecargada pudo convertir todos los tipos de argumento
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\initializer_list(52,1): message : puede ser 'std::initializer_list<float>::initializer_list(std::initializer_list<float> &&)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,79): message : 'std::initializer_list<float>::initializer_list(std::initializer_list<float> &&)': el argumento 1 no puede convertirse de 'int' a 'std::initializer_list<float> &&'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,79): message : Razón: no se puede realizar la conversión de 'int' a 'std::initializer_list<float>'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,79): message : La conversión requiere un segundo operador de conversión definido por el usuario o constructor
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\initializer_list(52,1): message : o       'std::initializer_list<float>::initializer_list(const std::initializer_list<float> &)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,79): message : 'std::initializer_list<float>::initializer_list(const std::initializer_list<float> &)': el argumento 1 no puede convertirse de 'int' a 'const std::initializer_list<float> &'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,79): message : Razón: no se puede realizar la conversión de 'int' a 'const std::initializer_list<float>'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,79): message : La conversión requiere un segundo operador de conversión definido por el usuario o constructor
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,79): message : al hacer coincidir la lista de argumentos '(int)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(6776,26): message : vea la declaración de 'std::max'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(52,26): message : puede ser '_Ty std::max(std::initializer_list<_Elem>,_Pr)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,68): message : "_Ty std::max(std::initializer_list<_Elem>,_Pr)": espera 2 argumentos - 1 proporcionado
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(45,6): message : o       'const _Ty &std::max(const _Ty &,const _Ty &) noexcept(<expr>)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,68): message : "const _Ty &std::max(const _Ty &,const _Ty &) noexcept(<expr>)": espera 2 argumentos - 1 proporcionado
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(35,33): message : o       'const _Ty &std::max(const _Ty &,const _Ty &,_Pr) noexcept(<expr>)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,68): message : "const _Ty &std::max(const _Ty &,const _Ty &,_Pr) noexcept(<expr>)": espera 3 argumentos - 1 proporcionado
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(217,68): message : al hacer coincidir la lista de argumentos '(int)'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(219,117): error C2597: referencia no válida a miembro no static 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(219,117): message : vea la declaración de 'Player::verrayos'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(219,117): error C3867: 'Player::verrayos': sintaxis no estándar; utilice '&' para crear un puntero al miembro
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(219,117): error C2568: '[': no se puede resolver la sobrecarga de funciones
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(221,39): warning C4244: 'argumento': conversión de 'const _Ty' a 'T'; posible pérdida de datos
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              T=float
+          ]
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(223,45): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(240,21): error C2597: referencia no válida a miembro no static 'Player::wall_sprite'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(19,9): message : vea la declaración de 'Player::wall_sprite'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(423,167): warning C4390: ';': se encontró una instrucción controlada vacía; ¿es esa la intención?
   Generando código...

@@ -105,8 +105,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\SFML-2.6.0\include</AdditionalIncludeDirectories>
-      <LanguageStandard_C>Default</LanguageStandard_C>
-      <LanguageStandard>/std:c++17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,9 +132,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="convertir_escena.cpp" />
+    <ClCompile Include="Enemigo.cpp" />
     <ClCompile Include="grados_a_radianes.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Player.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpplatest</LanguageStandard>
+    </ClCompile>
     <ClCompile Include="Radianes_a_grados.cpp" />
     <ClCompile Include="tomar_grados.cpp" />
   </ItemGroup>

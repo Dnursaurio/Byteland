@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <array> 
 #include "Global.hpp"
+
 using namespace std;
 using namespace sf;
 class Player
