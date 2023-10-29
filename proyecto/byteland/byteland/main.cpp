@@ -23,14 +23,17 @@ int main()
 	ventana.setView(View(FloatRect(0,0, ANCHO_PANTALLA,ALTURA_PANTALLA)));
 	
 	Sprite casilla_de_la_grilla_del_mapa_sprite;
+	Sprite pared_mapa_sprite;
 	
 	Texture casilla_de_la_grilla_del_mapa_textura;
 	casilla_de_la_grilla_del_mapa_textura.loadFromFile("sprites/Grilla.png");
 	
-	Player jugador(0, 0);
+	Texture pared_mapa_textura; 
+	pared_mapa_textura.loadFromFile("sprites/mapa_pared" + to_string(TAMANO_CASILLA_EN_MAPA) + ".png");
 
-	/*Enemigo enemy(0,0);
-	map = convertri_escena(jugador, enemy);*/
+	Player jugador(0, 0);
+	//Enemigo enemy(0, 0);
+	//map = convertir_escena(jugador, enemy);
 
 	casilla_de_la_grilla_del_mapa_sprite.setTexture(casilla_de_la_grilla_del_mapa_textura);
 	casilla_de_la_grilla_del_mapa_sprite.setTextureRect(IntRect(0,0,TAMANO_CASILLA_DE_GRILLA_EN_MAPA,TAMANO_CASILLA_DE_GRILLA_EN_MAPA));

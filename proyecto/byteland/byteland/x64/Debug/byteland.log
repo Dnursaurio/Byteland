@@ -1,3 +1,10 @@
-﻿main.obj : error LNK2019: símbolo externo "public: __cdecl Player::Player(float,float)" (??0Player@@QEAA@MM@Z) sin resolver al que se hace referencia en la función main
-main.obj : error LNK2019: símbolo externo "public: void __cdecl Player::draw_map(class sf::RenderWindow &)" (?draw_map@Player@@QEAAXAEAVRenderWindow@sf@@@Z) sin resolver al que se hace referencia en la función main
-C:\Byteland\proyecto\byteland\x64\Debug\byteland.exe : fatal error LNK1120: 2 externos sin resolver
+﻿  main.cpp
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(28,58): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(28,58): error C2143: error de sintaxis: falta ',' delante de '&'
+  Player.cpp
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(28,58): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(28,58): error C2143: error de sintaxis: falta ',' delante de '&'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.cpp(60,14): error C2511: 'void Player::draw_screen(sf::RenderWindow &,const Enemigo &)': la función miembro sobrecargada no se ha encontrado en 'Player'
+D:\byteland\Byteland\proyecto\byteland\byteland\Player.hpp(7,7): message : vea la declaración de 'Player'
+  tomar_grados.cpp
+  Generando código...

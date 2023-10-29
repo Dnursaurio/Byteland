@@ -14,13 +14,18 @@ class Player
 	array<float, ANCHO_PANTALLA> verrayos;
 
 	Sprite map_player_sprite;
+	Sprite enemigo_sprite;
+	Sprite wall_sprite;
+
 	Texture map_player_texture;
+	Texture enemigo_texture;
+	Texture wall_texture;
 
 public:
 	Player(float i_x, float i_y);
 
 	void draw_map(RenderWindow &i_ventana);
-	void draw_screen(RenderWindow &i_ventana);
+	void draw_screen(RenderWindow &i_ventana, const Enemigo &i_enemigo);
 	void set_position(float i_x , float i_y);
 	void update(const array<array<Cell, ALTURA_MAPA>, ANCHO_MAPA> &i_map, const RenderWindow &i_ventana);
 };

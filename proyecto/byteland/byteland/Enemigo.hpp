@@ -12,7 +12,6 @@ class Enemigo
 	float y;
 
 	Sprite enemigo_mapa_sprite;
-
 	Texture enemigo_mapa_texture;
 public:
 	Enemigo(float i_x, float i_y);
