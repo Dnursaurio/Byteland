@@ -8,6 +8,7 @@ constexpr float VEL_MOV = 2;
 //valor aprox de PI en c++
 constexpr float PI = 3.141592653589793116f;
 constexpr float DISTANCIA_DE_RENDER = 1024;
+constexpr float VELOCIDAD_DE_ROTACION_DEL_ENEMIGO = 2;
 
 //tamaño de cada casilla en el juego
 constexpr unsigned char TAMANO_CASILLA = 64;
