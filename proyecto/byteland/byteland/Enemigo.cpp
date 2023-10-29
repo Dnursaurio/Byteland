@@ -89,7 +89,7 @@ void Enemigo::update(const array<array<Cell, ALTURA_MAPA>, ANCHO_MAPA>& i_map, c
 		x += paso_x;
 		y = TAMANO_CASILLA * round(y / TAMANO_CASILLA);
 	}
-	else if ()
+	else if (0 == colision_mapa(x, paso_y + y, i_map))
 	{
 		x = TAMANO_CASILLA * round(x / TAMANO_CASILLA);
 		y += paso_y;
