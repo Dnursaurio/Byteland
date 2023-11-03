@@ -8,112 +8,114 @@
 
 using namespace std;
 using namespace sf;
+
 int main() {
 
-	bool dibujar_mapa = 1;
 
-	array<array<Cell, ALTURA_MAPA>, ANCHO_MAPA> map{};
+    bool dibujar_mapa = 1;
 
-	chrono::microseconds lag(0);
+    array<array<Cell, ALTURA_MAPA>, ANCHO_MAPA> map{};
 
-	chrono::steady_clock::time_point tiempo_previo;
+    chrono::microseconds lag(0);
 
-	Event evento;
+    chrono::steady_clock::time_point tiempo_previo;
 
-	RenderWindow ventana(VideoMode(REESCALADO_DE_PANTALLA * ANCHO_PANTALLA, REESCALADO_DE_PANTALLA * ALTURA_PANTALLA), "Byteland Project", Style::Close);
-	ventana.setMouseCursorVisible(0);
-	ventana.setView(View(FloatRect(0, 0, ANCHO_PANTALLA, ALTURA_PANTALLA)));
+    Event evento;
 
-	Sprite casilla_de_la_grilla_del_mapa_sprite;
-	Sprite pared_mapa_sprite;
+    RenderWindow ventana(VideoMode(REESCALADO_DE_PANTALLA * ANCHO_PANTALLA, REESCALADO_DE_PANTALLA * ALTURA_PANTALLA),
+                         "Byteland Project", Style::Close);
+    ventana.setMouseCursorVisible(0);
+    ventana.setView(View(FloatRect(0, 0, ANCHO_PANTALLA, ALTURA_PANTALLA)));
 
-	Texture casilla_de_la_grilla_del_mapa_textura;
-	casilla_de_la_grilla_del_mapa_textura.loadFromFile("sprites/Grilla.png");
+    Sprite casilla_de_la_grilla_del_mapa_sprite;
+    Sprite pared_mapa_sprite;
 
-	Texture pared_mapa_textura;
-	pared_mapa_textura.loadFromFile("sprites/mapa_pared" + to_string(TAMANO_CASILLA_EN_MAPA) + ".png");
+    Texture casilla_de_la_grilla_del_mapa_textura;
+    casilla_de_la_grilla_del_mapa_textura.loadFromFile("sprites/Grilla.png");
 
-	Player jugador(0, 0);
-	Enemigo enemy(0, 0);
-	map = convertir_escena(jugador, enemy);
+    Texture pared_mapa_textura;
+    pared_mapa_textura.loadFromFile("sprites/mapa_pared" + to_string(TAMANO_CASILLA_EN_MAPA) + ".png");
 
-	casilla_de_la_grilla_del_mapa_sprite.setTexture(casilla_de_la_grilla_del_mapa_textura);
-	casilla_de_la_grilla_del_mapa_sprite.setTextureRect(IntRect(0, 0, TAMANO_CASILLA_DE_GRILLA_EN_MAPA, TAMANO_CASILLA_DE_GRILLA_EN_MAPA));
+    Player jugador(0, 0);
+    Enemigo enemy(0, 0);
+    map = convertir_escena(jugador, enemy);
 
-	tiempo_previo = chrono::steady_clock::now();
+    casilla_de_la_grilla_del_mapa_sprite.setTexture(casilla_de_la_grilla_del_mapa_textura);
+    casilla_de_la_grilla_del_mapa_sprite.setTextureRect(
+            IntRect(0, 0, TAMANO_CASILLA_DE_GRILLA_EN_MAPA, TAMANO_CASILLA_DE_GRILLA_EN_MAPA));
 
-	while (1 == ventana.isOpen())
-	{
-		chrono::microseconds delta_time = chrono::duration_cast<chrono::microseconds>(chrono::steady_clock::now() - tiempo_previo);
+    tiempo_previo = chrono::steady_clock::now();
 
-		lag = delta_time;
+    while (1 == ventana.isOpen()) {
+        chrono::microseconds delta_time = chrono::duration_cast<chrono::microseconds>(
+                chrono::steady_clock::now() - tiempo_previo);
 
-		tiempo_previo += delta_time;
+        lag = delta_time;
 
-		while (DURACION_FOTOGRAMA <= lag)
-		{
-			lag -= DURACION_FOTOGRAMA;
+        tiempo_previo += delta_time;
 
-			while (1 == ventana.pollEvent(evento))
-			{
-				switch (evento.type)
-				{
-				case Event::Closed:
-				{
-					ventana.close();
+        while (DURACION_FOTOGRAMA <= lag) {
+            lag -= DURACION_FOTOGRAMA;
 
-					break;
-				}
-				case Event::KeyPressed:
-				{
-				case Keyboard::H:
-				{
-					dibujar_mapa = 1 - dibujar_mapa;
-				}
-				}
-				}
-			}
-			jugador.update(map, ventana);
-			enemy.update(map, ventana);
+            while (1 == ventana.pollEvent(evento)) {
+                switch (evento.type) {
+                    case Event::Closed: {
+                        ventana.close();
+                        break;
+                    }
+//Config_teclas:
+                    case sf::Event::KeyPressed: {
+                        switch (evento.key.code) {
+                            case sf::Keyboard::H: {
+                                dibujar_mapa = 1 - dibujar_mapa;
+                            }
+                            case sf::Keyboard::Escape: {
+                                ventana.close();
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            jugador.update(map, ventana);
+            enemy.update(map, ventana);
 
-			if (DURACION_FOTOGRAMA > lag)
-			{
-				ventana.clear(Color(73, 255, 255));
+            if (DURACION_FOTOGRAMA > lag) {
+                ventana.clear(Color(100, 149, 237));
 
-				jugador.draw_map(ventana);
+                jugador.draw_map(ventana);
                 enemy.dibujar_mapa(ventana);
 
-				if (1 == dibujar_mapa)
-				{
-					for (unsigned short a = 0; a < Cell(TAMANO_CASILLA_EN_MAPA * ANCHO_MAPA / static_cast<float>(TAMANO_CASILLA_DE_GRILLA_EN_MAPA)); a++)
-					{
-						for (unsigned short b = 0; b < Cell(TAMANO_CASILLA_EN_MAPA * ALTURA_MAPA / static_cast<float>(TAMANO_CASILLA_DE_GRILLA_EN_MAPA)); b++)
-						{
-							casilla_de_la_grilla_del_mapa_sprite.setPosition(static_cast<float>(TAMANO_CASILLA_EN_MAPA * a), static_cast<float>(TAMANO_CASILLA_EN_MAPA * b));
+                if (1 == dibujar_mapa) {
+                    for (unsigned short a = 0; a < Cell(TAMANO_CASILLA_EN_MAPA * ANCHO_MAPA /
+                                                        static_cast<float>(TAMANO_CASILLA_DE_GRILLA_EN_MAPA)); a++) {
+                        for (unsigned short b = 0; b < Cell(TAMANO_CASILLA_EN_MAPA * ALTURA_MAPA /
+                                                            static_cast<float>(TAMANO_CASILLA_DE_GRILLA_EN_MAPA)); b++) {
+                            casilla_de_la_grilla_del_mapa_sprite.setPosition(
+                                    static_cast<float>(TAMANO_CASILLA_EN_MAPA * a),
+                                    static_cast<float>(TAMANO_CASILLA_EN_MAPA * b));
 
-							ventana.draw(casilla_de_la_grilla_del_mapa_sprite);
-						}
-					}
+                            ventana.draw(casilla_de_la_grilla_del_mapa_sprite);
+                        }
+                    }
 
-					for (unsigned short a = 0; a < ANCHO_MAPA; a++)
-					{
-						for (unsigned short b = 0; b < ALTURA_MAPA; b++)
-						{
-							if (Cell::Wall == map[a][b])
-							{
-								pared_mapa_sprite.setPosition(static_cast<float>(TAMANO_CASILLA_EN_MAPA * a), static_cast<float>(TAMANO_CASILLA_EN_MAPA * b));
+                    for (unsigned short a = 0; a < ANCHO_MAPA; a++) {
+                        for (unsigned short b = 0; b < ALTURA_MAPA; b++) {
+                            if (Cell::Wall == map[a][b]) {
+                                pared_mapa_sprite.setPosition(static_cast<float>(TAMANO_CASILLA_EN_MAPA * a),
+                                                              static_cast<float>(TAMANO_CASILLA_EN_MAPA * b));
 
-								ventana.draw(pared_mapa_sprite);
-							}
-						}
-					}
-					jugador.draw_map(ventana);
+                                ventana.draw(pared_mapa_sprite);
+                            }
+                        }
+                    }
+                    jugador.draw_map(ventana);
 
-					enemy.dibujar_mapa(ventana);
-				}
-				ventana.display();
-			}
-		}
-	}
+                    enemy.dibujar_mapa(ventana);
+                }
+                ventana.display();
+            }
+        }
+    }
     return 0;
 }
