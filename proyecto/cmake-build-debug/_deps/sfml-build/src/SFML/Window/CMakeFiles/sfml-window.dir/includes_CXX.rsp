@@ -1,0 +1,1 @@
+-I"E:/Byteland/CCOMP1-SFML-master/cmake-build-debug/_deps/sfml-src/include" -I"E:/Byteland/CCOMP1-SFML-master/cmake-build-debug/_deps/sfml-src/src" -I"E:/Byteland/CCOMP1-SFML-master/cmake-build-debug/_deps/sfml-src/extlibs/headers/vulkan" -isystem "E:/Byteland/CCOMP1-SFML-master/cmake-build-debug/_deps/sfml-src/extlibs/headers/glad/include"

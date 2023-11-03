@@ -1,4 +1,0 @@
-"D:\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S D:\byteland++\CCOMP1-SFML-master -B D:\byteland++\CCOMP1-SFML-master\cmake-build-debug-mingw
--- Configuring done (2.8s)
--- Generating done (0.4s)
--- Build files have been written to: D:/byteland++/CCOMP1-SFML-master/cmake-build-debug-mingw
