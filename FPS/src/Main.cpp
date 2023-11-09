@@ -9,19 +9,17 @@
 
 int main()
 {
-	//We can hide the HUD.
+
 	bool draw_map = 1;
 
 	std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH> map{};
 
-	//We'll use this variable to make the game framerate-independent.
 	std::chrono::microseconds lag(0);
 
 	std::chrono::steady_clock::time_point previous_time;
 
 	sf::Event event;
 
-	//I called this project "FPS" even though there's no "S".
 	sf::RenderWindow window(sf::VideoMode(SCREEN_RESIZE * SCREEN_WIDTH, SCREEN_RESIZE * SCREEN_HEIGHT), "FPS", sf::Style::Close);
 	window.setMouseCursorVisible(0);
 	window.setView(sf::View(sf::FloatRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)));
@@ -96,9 +94,7 @@ int main()
 
 			if (FRAME_DURATION > lag)
 			{
-				//Drawing the sky.
-				//You might say, "Hey, you're just changing the color of the screen."
-				//And to that I'll say, "Shut up."
+			
 				window.clear(sf::Color(255, 0, 255));
 
 				player.draw_screen(window, steven);

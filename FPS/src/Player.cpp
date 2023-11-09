@@ -27,9 +27,9 @@ Player::Player(float i_x, float i_y) :
 
 void Player::draw_map(sf::RenderWindow& i_window)
 {
-	//If we have 8 frames, each frame will represent 45 degrees.
+	
 	float frame_angle = 360.f * MAP_CELL_SIZE / map_player_texture.getSize().x;
-	//We need to shift the angles by half so that their bisector matches the frames.
+	
 	float shifted_direction = get_degrees(direction_horizontal + 0.5f * frame_angle);
 	float start_x = x + 0.5f * CELL_SIZE;
 	float start_y = y + 0.5f * CELL_SIZE;
@@ -67,7 +67,7 @@ void Player::draw_screen(sf::RenderWindow& i_window, const Steven& i_steven)
 	//From Wikipedia:
 	//The function atan2 is defined as the angle in the Euclidean plane, given in radians, between the positive x-axis and the ray to the point (x, y) =/= (0, 0).
 	float steven_direction = get_degrees(rad_to_deg(atan2(ray_start_y - i_steven.get_center_y(), i_steven.get_center_x() - ray_start_x))) - direction_horizontal;
-	//My man Pythagoras is saving the day once again!
+	//Aplying Pytagoras 
 	float steven_distance = static_cast<float>(sqrt(pow(ray_start_x - i_steven.get_center_x(), 2) + pow(ray_start_y - i_steven.get_center_y(), 2)));
 	
 	//The column's position can be negative, so SHRT_MIN.
@@ -87,14 +87,13 @@ void Player::draw_screen(sf::RenderWindow& i_window, const Steven& i_steven)
 		steven_direction -= 360;
 	}
 
-	//If Steven is FAAAAAAAAR away from us or behind us, we don't need to draw him.
+	//If Enemy is FAR away from us or behind us, we don't need to draw him.
 	draw_steven = RENDER_DISTANCE >= steven_distance && steven_direction <= 0.75f * FOV_HORIZONTAL && steven_direction >= -0.75f * FOV_HORIZONTAL;
 
 	i_window.draw(floor_shape);
 
 	for (unsigned short a = 0; a < SCREEN_WIDTH; a++)
 	{
-		//My geometry teacher is probably laughing right now: "I TOLD YOU YOU'LL USE THIS IN REAL LIFE!"
 		
 		//We're drawing columns that are behind Steven.
 		if (0 == (1 == draw_steven && steven_distance > view_rays[a]))
@@ -168,7 +167,7 @@ void Player::draw_screen(sf::RenderWindow& i_window, const Steven& i_steven)
 	if (1 == draw_steven)
 	{
 		float frame_angle = 360.f * CELL_SIZE / steven_texture.getSize().x;
-		//We're getting Steven's direction relative to ours.
+		//We're getting Enemy's direction relative to ours.
 		float shifted_direction = get_degrees(i_steven.get_direction() + 0.5f * (180 + frame_angle) - direction_horizontal - steven_direction);
 		float steven_projection_position = 0.5f * tan(deg_to_rad(steven_direction)) / tan(deg_to_rad(0.5f * FOV_HORIZONTAL));
 
@@ -187,7 +186,7 @@ void Player::draw_screen(sf::RenderWindow& i_window, const Steven& i_steven)
 
 		for (unsigned short a = 0; a < SCREEN_WIDTH; a++)
 		{
-			//We're drawing columns that are closer than Steven.
+			//We're drawing columns that are closer than Enemy.
 			if (steven_distance > view_rays[a])
 			{
 				float ray_direction = FOV_HORIZONTAL * (floor(0.5f * SCREEN_WIDTH) - a) / (SCREEN_WIDTH - 1);
@@ -259,12 +258,10 @@ void Player::update(const std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i
 	unsigned short window_center_y = static_cast<unsigned short>(round(0.5f * i_window.getSize().y));
 
 	//Mouse control!
-	//By the way, do I need to write comments? Can't you just watch my video? I've already explained everything there.
 	rotation_horizontal = FOV_HORIZONTAL * (window_center_x - sf::Mouse::getPosition(i_window).x) / i_window.getSize().x;
 	rotation_vertical = FOV_VERTICAL * (window_center_y - sf::Mouse::getPosition(i_window).y) / i_window.getSize().y;
 
 	direction_horizontal = get_degrees(direction_horizontal + rotation_horizontal);
-	//Putting 90 here breaks the game so I put 89.
 	direction_vertical = std::clamp<float>(direction_vertical + rotation_vertical, -89, 89);
 
 	//Just so you know, this works even if the window is out of focus.

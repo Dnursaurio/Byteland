@@ -4,7 +4,6 @@
 #include "Headers/Global.hpp"
 #include "Headers/MapCollision.hpp"
 
-//I took this function from my Pac-Man project.
 bool map_collision(float i_x, float i_y, const std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map)
 {
 	float cell_x = i_x / CELL_SIZE;
