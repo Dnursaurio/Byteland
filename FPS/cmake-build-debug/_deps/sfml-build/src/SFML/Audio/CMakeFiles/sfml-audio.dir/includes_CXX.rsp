@@ -1,0 +1,1 @@
+-I"D:/FPS/cmake-build-debug/_deps/sfml-src/include" -I"D:/FPS/cmake-build-debug/_deps/sfml-src/src" -isystem "D:/FPS/cmake-build-debug/_deps/sfml-src/extlibs/headers/minimp3" -isystem "D:/FPS/cmake-build-debug/_deps/sfml-src/extlibs/headers/AL" -isystem "D:/FPS/cmake-build-debug/_deps/sfml-src/extlibs/headers"

@@ -1,0 +1,4 @@
+"D:\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S D:\FPS -B D:\FPS\cmake-build-debug
+-- Configuring done (2.3s)
+-- Generating done (0.3s)
+-- Build files have been written to: D:/FPS/cmake-build-debug

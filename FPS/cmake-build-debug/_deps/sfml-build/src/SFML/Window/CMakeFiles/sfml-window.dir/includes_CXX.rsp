@@ -1,0 +1,1 @@
+-I"D:/FPS/cmake-build-debug/_deps/sfml-src/include" -I"D:/FPS/cmake-build-debug/_deps/sfml-src/src" -I"D:/FPS/cmake-build-debug/_deps/sfml-src/extlibs/headers/vulkan" -isystem "D:/FPS/cmake-build-debug/_deps/sfml-src/extlibs/headers/glad/include"
