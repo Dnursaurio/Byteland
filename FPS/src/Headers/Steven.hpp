@@ -10,13 +10,13 @@ class Steven
 
 	sf::Texture map_steven_texture;
 public:
-	Steven(float i_x, float i_y);
+	Steven(float i_x, float i_y): public Map;
 
 	float get_center_x() const;
 	float get_center_y() const;
 	float get_direction() const;
 
-	void draw_map(sf::RenderWindow& i_window);
+	void draw_map(sf::RenderWindow& i_window) override;
 	void set_position(float i_x, float i_y);
 	void update(const std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, const sf::RenderWindow& i_window);
 };

@@ -1,6 +1,6 @@
 #pragma once
 
-class Player
+class Player:public Map
 {
 	float direction_horizontal;
 	float direction_vertical;
@@ -20,7 +20,7 @@ class Player
 public:
 	Player(float i_x, float i_y);
 
-	void draw_map(sf::RenderWindow& i_window);
+	void draw_map(sf::RenderWindow& i_window) override;
 	void draw_screen(sf::RenderWindow& i_window, const Steven& i_steven);
 	void set_position(float i_x, float i_y);
 	void update(const std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH>& i_map, const sf::RenderWindow& i_window);

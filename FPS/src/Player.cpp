@@ -9,6 +9,7 @@
 #include "Headers/RadToDeg.hpp"
 #include "Headers/Steven.hpp"
 #include "Headers/Player.hpp"
+#include "Headers/Map.hpp"
 
 Player::Player(float i_x, float i_y) :
 	direction_horizontal(0),

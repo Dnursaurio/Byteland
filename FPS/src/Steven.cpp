@@ -7,6 +7,7 @@
 #include "Headers/Global.hpp"
 #include "Headers/MapCollision.hpp"
 #include "Headers/Steven.hpp"
+#include "Headers/Map.hpp"
 
 Steven::Steven(float i_x, float i_y) :
 	direction(0),
